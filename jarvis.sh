@@ -203,8 +203,7 @@ jv_check_dependencies
 configure "load" || wizard
 # activate bluetooth if needed
 $jv_use_bluetooth && jv_bt_init
-# send google analytics hit
-$send_usage_stats && ( jv_ga_send_hit & )
+
 
 trigger_sanitized=$(jv_sanitize "$trigger")
 [ -n "$conversation_mode_override" ] && conversation_mode=$conversation_mode_override

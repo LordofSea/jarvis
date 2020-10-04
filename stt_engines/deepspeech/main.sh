@@ -2,7 +2,7 @@
 
 stt_deepspeech_install () {
   set -e # Don't attempt to continue if an error occurs
-  jv_install python3 python3-pip virtualenv
+  
   cd "$(dirname "${BASH_SOURCE[0]}")"
   virtualenv -p python3 .
   source bin/activate

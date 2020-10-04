@@ -1,0 +1,10 @@
+*HELP*==jv_display_commands
+*HELLO*==say "Hello $username"
+*WHAT*NAME*==say "My name is $trigger"
+*THANKS*|*THANK YOU*==say "You're welcome"
+*GOODBYE*|*BYE*==say "Goodbye $username"; jv_exit
+*FORGET*IT*|CANCEL*==bypass=false; say "Ok"
+REPEAT*|DO*AGAIN==jv_repeat_last_command
+*TEST*==say "It works!"
+*VERSION*==say "I am version $jv_version"
+*SAY (*) AND (*)==say "(1) (2)"
